@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato", 'Noto Sans TC', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333333;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60rem;
+  margin: 6rem auto;
+  padding: 4rem 4rem;
+  background-color: #f5f5f5;
+  border: 1px solid #c2c2c2;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #999999;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #666666;
+  margin: 2rem 0 0.4rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #999999;
+}
+
+.icon:hover {
+  color: #82b3c9;
+  cursor: pointer;
+}
+
+.newTask {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newTask > input {
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.taskList > ul .taskList__task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+  letter-spacing: .1rem;
+}
+
+.taskList > ul .taskList__task > p {
+  width: 100%;
+  margin: 0 1rem 0 1rem;
+  font-size: 1.6rem;
+}
+
+.taskList > ul .taskList__task--completed > p {
+  text-decoration: line-through;
+  color: #999999;
+}
